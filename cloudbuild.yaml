@@ -5,3 +5,6 @@ steps:
 
 images: ['europe-west1-docker.pkg.dev/$_PROJECT_ID/docker-repository/${_TARGET_IMAGE_URI}']
 timeout: 3600s
+
+options:
+  logging: CLOUD_LOGGING_ONLY
