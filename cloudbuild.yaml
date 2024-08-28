@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker:latest'
-    args: ["build","--network=cloudbuild", "-t", "europe-west1-docker.pkg.dev/$_PROJECT_ID/docker-repository/${_TARGET_IMAGE_URI}", "."]
+    args: ["build","--network=cloudbuild", "-t", "us-east4-docker.pkg.dev/$_PROJECT_ID/docker-repository/${_TARGET_IMAGE_URI}", "."]
     dir: 'custom_serving_container/PT'
 
 images: ['europe-west1-docker.pkg.dev/$_PROJECT_ID/docker-repository/${_TARGET_IMAGE_URI}']
